@@ -1,0 +1,279 @@
+body {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  background: #fff url("../images/background_header.svg") center / cover
+    no-repeat;
+}
+
+.logo {
+  position: relative;
+  left: 30px;
+  top: 30px;
+  width: 105px;
+}
+
+.nav {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff976b;
+}
+
+.header-title {
+  margin: 183px 0 0 80px;
+  max-width: 709px;
+  font-size: 58px;
+  line-height: 72px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.header-span-accent {
+  display: block;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #ff976b;
+}
+
+.header-description {
+  margin: 28px 0 0 80px;
+  max-width: 683px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header-image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+}
+
+.header-info {
+  position: absolute;
+  left: 80px;
+  bottom: 40px;
+  width: calc(100% - 160px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-hours {
+  color: #6f6f6f;
+}
+
+.header-paragraph {
+  color: #6f6f6f;
+  font-weight: 500;
+}
+
+/* RESERVA */
+
+.content {
+  background-color: #ffd6c5;
+}
+
+.reservation {
+  padding: 100px 0 120px;
+  background: #ffd6c5 url("../images/background_reservation.svg") center / cover
+    no-repeat;
+}
+
+.reservation-title {
+  max-width: 385px;
+  margin: 0 auto 32px;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 500;
+}
+
+.reservation-form {
+  max-width: 385px;
+  margin: 0 auto;
+}
+
+.reservation-fieldset {
+  border: 0;
+}
+
+.reservation-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.reservation-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 32px;
+  padding: 0 20px;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.reservation-input::placeholder {
+  color: #838383;
+}
+
+.reservation-button {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 12px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #e96e3a;
+  color: #fff;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.reservation-button:hover {
+  opacity: 0.7;
+}
+
+.reservation-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.reservation-checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: 1px solid #4f4f4f;
+  border-radius: 2px;
+}
+
+.reservation-checkbox:checked {
+  background-color: #2a2a2a;
+  background-image: url("../images/check.svg");
+}
+
+/* FOOTER */
+
+.footer {
+  position: relative;
+  min-height: 340px;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  background-color: #d35722;
+  color: #fff;
+  overflow: hidden;
+}
+
+.footer-logo {
+  position: relative;
+  z-index: 2;
+  width: 105px;
+  height: auto;
+}
+
+.footer-circle {
+  position: absolute;
+  top: -18px;
+  left: -4px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #e96e3a;
+  z-index: 1;
+}
+
+.footer-social {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  z-index: 2;
+}
+
+.footer-social-heading {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-item {
+  margin-bottom: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+  color: #ffd6c5;
+}
+
+.footer-social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-copyright {
+  position: absolute;
+  left: 80px;
+  bottom: 20px;
+  z-index: 2;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título de la pestaña -->
+    <title>Triple Espresso</title>
+    <!-- Icono de la pestaña -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Conexión con el CSS -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- Contenido del encabezado -->
+    <header class="header">
+      <!-- Logotipo -->
+      <img
+        src="./images/logo_coffeeshop_dark.svg"
+        alt="Logotipo Triple Espresso"
+        class="logo"
+      />
+
+      <!-- Links de navegación -->
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="#reservation" class="nav-link">Reservar una mesa</a>
+          <a href="#contacts" class="nav-link">Contactos</a>
+        </div>
+      </nav>
+
+      <!-- Título y subtítulo -->
+      <h1 class="header-title">
+        <span class="header-span-accent">Café de especialidad</span>
+        en Triple Peaks
+      </h1>
+
+      <!-- Descripción -->
+      <p class="header-description">
+        ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+        para darte energía y motivar tu creatividad.
+      </p>
+
+      <!-- Imagen de fondo -->
+      <img
+        src="./images/inside_coffee_shop.png"
+        alt="Interior de Triple Espresso"
+        class="header-image"
+      />
+
+      <!-- Información -->
+      <div class="header-info">
+        <div class="header-hours">
+          <p class="header-paragraph">Horario:</p>
+          <p class="header-paragraph">Lunes a Viernes (de 10:00h a 19:00h)</p>
+          <p class="header-paragraph">
+            Sábados y Domingos (de 11:00h a 18:00h)
+          </p>
+        </div>
+        <p class="header-paragraph">
+          Avenida del Éxito 200, Ciudad Triple Peaks
+        </p>
+      </div>
+    </header>
+
+    <!-- Reservación -->
+    <main class="content">
+      <section class="reservation" id="reservation">
+        <h2 class="reservation-title">Reservar una mesa</h2>
+
+        <form class="reservation-form">
+          <fieldset class="reservation-fieldset">
+            <label class="reservation-label" for="name">Nombre *</label>
+            <input
+              type="text"
+              class="reservation-input"
+              required
+              placeholder="Nombre"
+              id="name"
+              name="name"
+            />
+
+            <label class="reservation-label" for="guests">
+              Número de comensales *
+            </label>
+            <input
+              type="number"
+              class="reservation-input"
+              min="1"
+              max="8"
+              required
+              placeholder="1-8"
+              id="guests"
+              name="guests"
+            />
+
+            <label class="reservation-label" for="datetime">
+              Fecha y hora *
+            </label>
+            <input
+              type="datetime-local"
+              class="reservation-input"
+              required
+              id="datetime"
+              name="datetime"
+            />
+
+            <label class="reservation-label" for="email">
+              Tu correo electrónico *
+            </label>
+            <input
+              type="email"
+              class="reservation-input"
+              required
+              placeholder="email@email.com"
+              id="email"
+              name="email"
+            />
+
+            <button type="submit" class="reservation-button">
+              Reservar una mesa
+            </button>
+
+            <label for="terms" class="reservation-checkbox-label">
+              <input
+                type="checkbox"
+                id="terms"
+                class="reservation-checkbox"
+                name="terms"
+                required
+              />
+              <span>Acepto los términos de uso</span>
+            </label>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <img
+        src="./images/logo_coffeeshop_light.svg"
+        alt="Logotipo Triple Espresso"
+        class="footer-logo"
+      />
+
+      <div class="footer-circle"></div>
+
+      <div class="footer-social">
+        <h2 class="footer-social-heading">Redes sociales</h2>
+
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link">
+              <img
+                src="./images/facebook_white.svg"
+                alt="Facebook"
+                class="footer-social-icon"
+              />
+              Facebook
+            </a>
+          </li>
+
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link">
+              <img
+                src="./images/instagram_white.svg"
+                alt="Instagram"
+                class="footer-social-icon"
+              />
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="footer-copyright">© 2026 Lorena Castán</p>
+    </footer>
+  </body>
+</html>
